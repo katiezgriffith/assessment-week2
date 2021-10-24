@@ -97,10 +97,12 @@ console.log(category)
 */
 
 //CODE HERE
-const foodArr=(burger, hotDog, chili, taco, cookie)=>{
-let arr = foodArr
 
-const burger = {
+let foodArr =[
+
+
+   
+ burger= {
     foodName : "Cheeseburger",
     price : 8.99,
     category: "Entree",
@@ -109,7 +111,8 @@ const burger = {
     tags: "Best cheeseburger"
     
 }
-const hotDog = {
+
+ {
     foodName : "Hot Dawg",
     price : 6.99,
     category: "Entree",
@@ -118,7 +121,8 @@ const hotDog = {
     tags: "Average Hot Dog"
 
 }
-const chili = {
+,
+{
     foodName :"Chili",
     price: 3.99,
     category: "Side",
@@ -127,8 +131,8 @@ const chili = {
     tags: "Good taste"
 
 }
-
-const taco = {
+,
+ {
     foodName: "Taco",
     price: 9.99,
     category: "Entree",
@@ -137,8 +141,8 @@ const taco = {
     tags: "Best item on menu"
 
 }
-
-const cookie = {
+,
+ {
     foodName: "Cookie",
     price: 1.99,
     category: "Side",
@@ -148,7 +152,9 @@ const cookie = {
 
     
 } 
-} 
+]
+console.log (foodName.cookie)
+
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -165,9 +171,20 @@ const cookie = {
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
-const filteredFood = foodArr.filter (tags => tags=== ("Simple"))
+// const filteredFood = foodArr.filter((tags));{
+//     if (tags ==="simple"){
+//     return true
+//     } else {  
+//         return false
 
-console.log (filteredFood)
+// }}
+
+
+// function filterItems(arr, query) {
+//     return arr.filter(function(el) {
+//       return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+//     })
+//   }
 
 
 
