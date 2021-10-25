@@ -102,7 +102,7 @@ let foodArr =[
 
 
    
- burger= {
+ {
     foodName : "Cheeseburger",
     price : 8.99,
     category: "Entree",
@@ -111,7 +111,7 @@ let foodArr =[
     tags: "Best cheeseburger"
     
 }
-
+,
  {
     foodName : "Hot Dawg",
     price : 6.99,
@@ -133,16 +133,17 @@ let foodArr =[
 }
 ,
  {
-    foodName: "Taco",
-    price: 9.99,
-    category: "Entree",
-    popularity: 9,
-    rating: 9,
-    tags: "Best item on menu"
+ 
+    "foodName": "Taco",
+    "price": 9.99,
+    "category": "Entree",
+    "popularity": 9,
+    "rating": 9,
+    "tags": "Best item on menu"
 
 }
 ,
- {
+{
     foodName: "Cookie",
     price: 1.99,
     category: "Side",
@@ -153,7 +154,8 @@ let foodArr =[
     
 } 
 ]
-console.log (foodName.cookie)
+
+console.log(foodArr)
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -169,23 +171,20 @@ console.log (foodName.cookie)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
-// const filteredFood = foodArr.filter((tags));{
-//     if (tags ==="simple"){
-//     return true
-//     } else {  
-//         return false
-
-// }}
+//let filteredFood = foodArr.filter(foodArr.filter => foodArr.tags);
+//console.log(filteredFood.tags)
+let filteredFood = foodArr.filter(food => food.tags === "average");
+console.log(filteredFood)
 
 
-// function filterItems(arr, query) {
-//     return arr.filter(function(el) {
-//       return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+
+//  function filterItems(arr, query) {
+//     return arr.filter(filterItems(foodArr, "tags"), {
+//       return: arr.toLowerCase().indexOf(query.toLowerCase()) !== -1
 //     })
 //   }
-
+//  console.log (filterItems(foodArr, "tags"))
 
 
 //////////////////PROBLEM 5////////////////////

@@ -23,12 +23,10 @@
 
 //CODE HERE
 
-const greetUser= (username) => {
-    let newUserName = {"Welcome back,",`{$name}` }
+const greetUser = (username) => "Welcome back, " + username
+console.log(greetUser('Katie'))
 
-}
 
-console.log(greetUser(Katie))
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -53,8 +51,36 @@ console.log(greetUser(Katie))
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+// function canWeDeliver(zipcode) {
+    
+//     if (zipcode === deliveryAreaZipCodes) {
+//       console.log ('You are in our delivery zone!');
+//     } else {
+//       console.log ('Sorry, we can not deliver here.');
+//     }
+    
+    
+//   }
+//   console.log(canWeDeliver(85204))
 
 
+
+
+
+
+    
+function canWeDeliver(zipcode)  {
+let newZip = zipcode = deliveryAreaZipCodes
+
+if (newZip.includes (deliveryAreaZipCodes)) {
+    return ("You're in our delivery zone!")
+} else {
+    return ("Sorry, we can't deliver to that address")
+} 
+
+}
+
+console.log (canWeDeliver(70506))
 
 /* 
     Problem 2 Continued
@@ -74,7 +100,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+const newZips = deliveryAreaZipCodes;
 
+let txt = newZips;
+newZips.forEach(canWeDeliverToo);
+
+function canWeDeliverToo(zipcode) {
+  txt += zipcode;
+}
+console.log (canWeDeliverToo(70506))
+
+  
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -96,7 +132,7 @@ const deals = [
     }, 
     {
         title: 'Free Kids Meal with 2 Regular Entrees', 
-        desc: '   This deal lasts until the end of March! '
+        desc: ' This deal lasts until the end of March! '
     }
 ]
 
@@ -110,6 +146,7 @@ const deals = [
 */
 
 //CODE HERE
+let newdeals = deals.replace('15','10')
 
 
 
