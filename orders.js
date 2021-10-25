@@ -40,7 +40,7 @@ class Ticket {
 
     }
     updateStatus(newStatus){
-        newStatus= this.status
+         this.status === newStatus
             
                 
         
@@ -64,7 +64,7 @@ class Ticket {
 
 //CODE HERE
 
-let firstTicket = new Ticket('Pizza', "7:03pm", 375)
+let firstTicket = new Ticket('Pizza', "7:03pm", 375, this.status)
 /*
     Call the `updateStatus` method on
     `firstTicket` passing in the string
